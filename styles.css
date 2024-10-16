@@ -1,0 +1,664 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Stone Collection", sans-serif;
+}
+
+.stick {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.header-row {
+  gap: 700px;
+  align-items: center;
+  display: flex;
+  padding: 20px 0 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li :hover {
+  color: #ac1313;
+}
+
+.nav li {
+  text-decoration: none;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-align: left;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cart {
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+.divider {
+  display: inline-block;
+  width: 1px;
+  height: 24px;
+  background-color: #ccc;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.cart-link {
+  text-decoration: none;
+  font-family: Libre Franklin, sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.cart-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.banner {
+  background: url("./img/image\ \(3\).png"), center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px;
+}
+
+.banner-row {
+  display: flex;
+  gap: 75px;
+}
+
+.banner-row h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.banner-row h3 {
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #d77474;
+}
+
+.banner-row h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: left;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.banner-row p {
+  font-family: Libre Franklin, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 40px;
+  color: #6c6c6c;
+}
+
+.banner-column {
+  padding-top: 20px;
+  max-width: 50%;
+}
+
+.col-3 {
+  padding-top: 40px;
+  max-width: 500px;
+}
+
+.shop-btn {
+  background-color: #ac1313;
+  font-family: Poppins, sans-serif;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.shop-btn:hover {
+  background-color: #8b1010;
+}
+
+.banner-image {
+  margin: 0px 30px;
+  max-width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.categories-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #d77474;
+}
+
+.section-title h2 {
+  text-transform: uppercase;
+  color: #d77474;
+}
+
+.section-title .highlight {
+  display: block;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.category {
+  text-align: center;
+  max-width: 300px;
+  margin-bottom: 90px;
+}
+
+.circle {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.circle p {
+  justify-content: end;
+  align-items: end;
+}
+
+.big-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.vases {
+  background-color: #e4b366;
+}
+
+.mugs {
+  background-color: #f05b10;
+}
+
+.plates {
+  background-color: #a21010;
+}
+
+.col-92 {
+  gap: 40px;
+  max-width: 90%;
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.col-92 h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: start;
+  margin-left: 80px;
+  margin-bottom: 26px;
+}
+
+.col-92 p {
+  font-family: Libre Franklin, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+  color: #6c6c6c;
+  margin-bottom: 100px;
+  margin-left: 80px;
+}
+
+.featured-products {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 900px;
+  justify-content: space-between;
+}
+
+.product-image-container {
+  position: relative;
+}
+
+.featured-products-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 220px;
+  background-color: #f5f5f5;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.product-image-container {
+  position: relative;
+  width: 250px;
+  margin-right: 20px;
+}
+
+.product-image-container-2 {
+  position: relative;
+  width: 350px;
+  margin-right: 20px;
+}
+
+.product-image-container img,
+.product-image-container-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.product-info {
+  width: 360px;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 34px;
+}
+
+.product-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.view-details {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.view-details:hover {
+  color: #8b1010;
+  border-color: #8b1010;
+}
+
+.product-collection {
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 120px;
+}
+
+.collection-title {
+  color: #d87b7b;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.collection-main-title {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.product-name {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-family: "Libre Franklin", sans-serif;
+  color: #ac1313;
+  font-size: 16px;
+}
+
+.view-all-products {
+  width: 214px;
+  height: 62px;
+  margin-top: 40px;
+  padding: 10px 30px;
+  background-color: #ac1313;
+  color: #fff;
+  border: none;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-products:hover {
+  background-color: #8b1010;
+}
+
+.new_collection_banner {
+  background: url("./img/IMAGE\ \(10\).png"), center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px;
+  padding-left: 144px;
+}
+
+.new_collection_banner-row {
+  display: flex;
+  gap: 75px;
+}
+
+.new_collection_banner-row h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.new_collection_banner-row h3 {
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #d77474;
+}
+
+.new_collection_banner-row h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: left;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.new_collection_banner-row p {
+  font-family: Libre Franklin, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 40px;
+  color: #6c6c6c;
+  white-space: nowrap;
+}
+
+.lorem-ipsum {
+  color: #ac1313;
+}
+
+.new_collection_banner-column {
+  padding-top: 20px;
+  max-width: 50%;
+}
+
+.latest-news {
+  margin-top: 122px;
+  margin-bottom: 134px;
+  margin-left: 144px;
+  margin-right: 144px;
+}
+
+.latest-news-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.latest-new-column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.latest-news-title {
+  margin-bottom: 63.05px;
+}
+
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+}
+
+.email-input {
+  width: 320px;
+  height: 45px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-btn {
+  padding: 10px 20px;
+  margin-left: 4px;
+  width: 175px;
+  height: 45px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #333;
+}
+
+.newsletter-checkbox {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.checkbox-input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.checkbox-label {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.latest-news-title {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #d77474;
+}
+
+.latest-news-title .highlight {
+  display: block;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 10px;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(219, 219, 219, 0.1);
+}
+
+.brand-subtitle {
+  font-size: 14px;
+  color: #6c6c6c;
+  margin-bottom: 50px;
+  line-height: 24px;
+  font-family: Libre Franklin, sans-serif;
+  font-weight: 400;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-bottom: 80px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h3 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 23px;
+  font-family: Poppins, sans-serif;
+}
+
+.contact p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Libre Franklin, sans-serif;
+  color: #6c6c6c;
+}
+.contact-icon {
+  width: 30px;
+  margin-bottom: 10px;
+}
+.email {
+  padding-right: 200px;
+}
+.find {
+  padding-right: 100px;
+}
+
+.footer {
+  padding-top: 50px;
+  font-size: 12px;
+  color: #999;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: none;
+}
